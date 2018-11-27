@@ -1,0 +1,73 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.iconGroup {
+  i {
+    transition: color 0.32s;
+    color: @text-color-secondary;
+    cursor: pointer;
+    margin-left: 16px;
+    &:hover {
+      color: @text-color;
+    }
+  }
+}
+
+.salesCard {
+  .salesBar {
+    padding: 0 0 32px 32px;
+  }
+  :global {
+    .ant-tabs-bar {
+      padding-left: 16px;
+      .ant-tabs-nav .ant-tabs-tab {
+        padding-top: 16px;
+        padding-bottom: 14px;
+        line-height: 24px;
+      }
+    }
+    .ant-tabs-extra-content {
+      padding-right: 24px;
+      line-height: 55px;
+    }
+    .ant-card-head {
+      position: relative;
+    }
+    .ant-card-head-title {
+      align-items: normal;
+    }
+  }
+}
+
+.salesCardExtra {
+  height: inherit;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.trendText {
+  margin-left: 8px;
+  color: @heading-color;
+}
+
+@media screen and (max-width: @screen-lg) {
+
+}
+
+@media screen and (max-width: @screen-md) {
+  .salesCard .salesBar {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .salesCard {
+    :global {
+      .ant-tabs-content {
+        padding-top: 30px;
+      }
+    }
+  }
+}
